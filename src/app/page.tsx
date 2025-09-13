@@ -124,7 +124,7 @@ function FeatureSection() {
           width={1216}
           height={768}
           src="/screenshots/watchtower19.png"
-          alt="WatchTower19 dashboard showing incident reports, vendor metrics, and communication tools"
+          /* alt="WatchTower19 dashboard showing incident reports, vendor metrics, and communication tools" */
           className="mt-16 h-144 sm:h-auto sm:w-304"
         />
         <p className="mt-8 max-w-2xl text-lg text-gray-600">
@@ -370,7 +370,7 @@ export default function Home() {
       <Hero />
       <main>
         {<Container className="mt-10">
-          {/* <LogoCloud /> */}
+          {<LogoCloud />}
         </Container>
        /* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
