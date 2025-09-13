@@ -3,11 +3,16 @@ import { revalidateSyncTags } from '@/sanity/revalidateSyncTags'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 
-export const metadata: Metadata = {
+/* export const metadata: Metadata = {
   title: {
     template: '%s - Radiant',
     default: 'Radiant - Close every deal',
   },
+} */
+
+export const metadata = {
+  title: "Bee Line Microsystems",
+  description: "Custom AI + SaaS solutions for Chicago businesses"
 }
 
 export default function RootLayout({
