@@ -102,13 +102,13 @@ export function LogoCluster() {
       <div className="absolute left-1/2 h-full w-104 -translate-x-1/2">
         <MainLogo />
         <Logo
-          src="/logo-cluster/career-builder.svg"
+          src="/logo-cluster/Stripe.svg"
           left={360}
           top={144}
           hover={{ x: 6, y: 1, rotate: 5, delay: 0.38 }}
         />
         <Logo
-          src="/logo-cluster/dribbble.svg"
+          src="/logo-cluster/ChicagoAPI.svg"
           left={285}
           top={20}
           hover={{ x: 4, y: -5, rotate: 6, delay: 0.3 }}
@@ -126,13 +126,13 @@ export function LogoCluster() {
           hover={{ x: -2, y: -5, rotate: -6, delay: 0.15 }}
         />
         <Logo
-          src="/logo-cluster/upwork.svg"
+          src="/logo-cluster/Google.svg"
           left={36}
           top={56}
           hover={{ x: -4, y: -5, rotate: -6, delay: 0.35 }}
         />
         <Logo
-          src="/logo-cluster/we-work-remotely.svg"
+          src="/logo-cluster/watchtower19_logo.svg"
           left={96}
           top={176}
           hover={{ x: -3, y: 5, rotate: 3, delay: 0.15 }}

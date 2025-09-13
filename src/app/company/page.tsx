@@ -1,4 +1,361 @@
+// src/app/company/page.tsx
 import { AnimatedNumber } from '@/components/animated-number'
+import { Button } from '@/components/button'
+import { Container } from '@/components/container'
+import { Footer } from '@/components/footer'
+import { GradientBackground } from '@/components/gradient'
+import { Navbar } from '@/components/navbar'
+import { Heading, Lead, Subheading } from '@/components/text'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Bee Line Microsystems',
+  description:
+    'AI-powered, local-first tools for business districts, SSA directors, and small businesses in Chicago.',
+}
+
+function Header() {
+  return (
+    <Container className="mt-16">
+      <Heading as="h1">AI tools for local business growth.</Heading>
+      <Lead className="mt-6 max-w-3xl">
+        Bee Line Microsystems builds lightweight SaaS that helps Small Business
+        Associations and neighborhood businesses act faster: incident reporting,
+        alerts, dashboards, and an operator-grade AI assistant.
+      </Lead>
+
+      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+        <div className="max-w-lg">
+          <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
+          <p className="mt-6 text-sm/6 text-gray-600">
+            Deliver practical automation to Chicago business districts. Replace
+            slow manual workflows with clear signals and next actions. Keep data
+            local. Keep ownership simple. Ship value weekly.
+          </p>
+          <p className="mt-8 text-sm/6 text-gray-600">
+            The focus: SSA directors and business owners. We connect them with a
+            shared real-time picture of what is happening on the street and what
+            needs to happen next. No heavy change management. No bloat.
+          </p>
+          <div className="mt-8 flex gap-3">
+            <Button href="/watchtower19">Explore WatchTower19</Button>
+            {/* <Button variant="outline" href="/contact">
+              Talk to us
+            </Button> */}
+          </div>
+          <div className="mt-10 flex gap-3"><p></p></div>
+        </div>
+
+        {/*  <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
+          <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img
+                alt="SSA corridor dashboard"
+                src="/company/corridor-dashboard.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
+              <img
+                alt="Mobile alerts"
+                src="/company/mobile-alerts.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img
+                alt="Vendor metrics"
+                src="/company/vendor-metrics.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
+              <img
+                alt="Neighborhood map"
+                src="/company/neighborhood-map.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-lg:mt-16 lg:col-span-1">
+          <Subheading>Impact</Subheading>
+          <hr className="mt-6 border-t border-gray-200" />
+          <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+              <dt className="text-sm/6 text-gray-600">SSAs Served</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={1} end={4} />
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+              <dt className="text-sm/6 text-gray-600">Businesses Connected</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={50} end={350} />
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
+              <dt className="text-sm/6 text-gray-600">Incidents Routed</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={200} end={1200} />
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2">
+              <dt className="text-sm/6 text-gray-600">Automations Live</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={3} end={25} />
+              </dd>
+            </div>
+          </dl>
+        </div> */}
+      </section>
+    </Container>
+  )
+}
+
+function Feature({
+  title,
+  children,
+}: {
+  title: string
+  children: React.ReactNode
+}) {
+  return (
+    <li className="rounded-xl border border-gray-200 p-5 shadow-sm">
+      <h3 className="text-base/6 font-medium">{title}</h3>
+      <p className="mt-3 text-sm/6 text-gray-600">{children}</p>
+    </li>
+  )
+}
+
+function Products() {
+  return (
+    <Container className="mt-32">
+      <Subheading>Products</Subheading>
+      <Heading as="h3" className="mt-2">
+        Operator tools that stay out of your way.
+      </Heading>
+      <Lead className="mt-6 max-w-3xl">
+        Focused scopes. Clear handoffs. Useful defaults. Everything can be run
+        by one director and a lean field team.
+      </Lead>
+
+      <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <Feature title="WatchTower19">
+          Real-time incident reporting between business owners and SSA
+          directors. Bidirectional updates, media attachments, and a clean
+          queue. Multi-SSA and multi-location support out of the box.
+        </Feature>
+        <Feature title="District Dashboards">
+          One screen for corridor status. Public data, vendor data, and field
+          notes in one place. Filters that match how directors actually work.
+        </Feature>
+        <Feature title="AI Assistant">
+          A Jarvis-style assistant that reads feeds, drafts outreach, summarizes
+          meetings, and kicks off automations. Outlook and messaging integration
+          ready.
+        </Feature>
+      </div>
+
+      <div className="mt-8">
+        <Button href="/demo">Request a demo</Button>
+      </div>
+    </Container>
+  )
+}
+
+function Person({
+  name,
+  role,
+  img,
+}: {
+  name: string
+  role: string
+  img: string
+}) {
+  return (
+    <li className="flex items-center gap-4">
+      <img alt="" src={img} className="size-12 rounded-full object-cover" />
+      <div className="text-sm/6">
+        <h3 className="font-medium">{name}</h3>
+        <p className="text-gray-500">{role}</p>
+      </div>
+    </li>
+  )
+}
+
+function Team() {
+  return (
+    <Container className="mt-32">
+      <Subheading>Team</Subheading>
+      <Heading as="h3" className="mt-2">
+        Built by operators who ship.
+      </Heading>
+      <Lead className="mt-6 max-w-3xl">
+        Small team. High leverage. Direct lines to users in the corridor.
+      </Lead>
+
+      <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="max-w-lg">
+          <p className="text-sm/6 text-gray-600">
+            We pair street-level input from business owners and SSA directors
+            with pragmatic engineering. We remove clicks, collapse steps, and
+            document what matters. We bias to deploy.
+          </p>
+          <div className="mt-6">
+            <Button className="w-full sm:w-auto" href="/contact">
+              Work with us
+            </Button>
+          </div>
+        </div>
+        <div className="max-lg:order-first max-lg:max-w-lg">
+          <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+            <img
+              alt="Field testing"
+              src="/company/field-testing.jpg"
+              className="block size-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <Subheading as="h3" className="mt-24">
+        Core
+      </Subheading>
+      <hr className="mt-6 border-t border-gray-200" />
+      <ul
+        role="list"
+        className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <Person name="Steve Leinweber" role="Founder / Engineer" img="/team/steve.jpg" />
+        <Person name="Field Advisors" role="SSA Directors & Owners" img="/team/advisors.jpg" />
+        <Person name="Ops Support" role="Vendor and Market Ops" img="/team/ops.jpg" />
+      </ul>
+    </Container>
+  )
+}
+
+function Testimonial() {
+  return (
+    <div className="relative flex aspect-square flex-col justify-end overflow-hidden rounded-3xl sm:aspect-5/4 lg:aspect-3/4">
+      <img
+        alt="Corridor at dusk"
+        src="/testimonials/corridor.jpg"
+        className="absolute inset-0 object-cover"
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-10% to-75% ring-1 ring-gray-950/10 ring-inset lg:from-25%"
+      />
+      <figure className="relative p-10">
+        <blockquote>
+          <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
+            Response times dropped, and owners finally see the same picture we
+            do. Simple and fast.
+          </p>
+        </blockquote>
+        <figcaption className="mt-6 border-t border-white/20 pt-6">
+          <p className="text-sm/6 font-medium text-white">SSA Director</p>
+          <p className="text-sm/6 font-medium">
+            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
+              Chicago, IL
+            </span>
+          </p>
+        </figcaption>
+      </figure>
+    </div>
+  )
+}
+
+function Careers() {
+  return (
+    <Container className="my-32">
+      <Subheading>Careers</Subheading>
+      <Heading as="h3" className="mt-2">
+        Remote-friendly. Field-oriented.
+      </Heading>
+      <Lead className="mt-6 max-w-3xl">
+        We hire slowly. We value operators who can own a problem end-to-end.
+      </Lead>
+      <div className="mt-24 grid grid-cols-1 gap-16 lg:grid-cols-[1fr_24rem]">
+        <div className="lg:max-w-2xl">
+          <Subheading as="h3">Open positions</Subheading>
+          <div>
+            <table className="w-full text-left">
+              <colgroup>
+                <col className="w-2/3" />
+                <col className="w-1/3" />
+                <col className="w-0" />
+              </colgroup>
+              <thead className="sr-only">
+                <tr>
+                  <th scope="col">Title</th>
+                  <th scope="col">Location</th>
+                  <th scope="col">Read more</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="colgroup" colSpan={3} className="px-0 pt-10 pb-0">
+                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
+                      Engineering
+                    </div>
+                  </th>
+                </tr>
+                <tr className="border-b border-dotted border-gray-200 text-sm/6 font-normal">
+                  <td className="px-0 py-4">Product Engineer</td>
+                  <td className="px-0 py-4 text-gray-600">Remote</td>
+                  <td className="px-0 py-4 text-right">
+                    <Button variant="outline" href="/careers#product-engineer">
+                      View listing
+                    </Button>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="colgroup" colSpan={3} className="px-0 pt-5 pb-0">
+                    <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
+                      Field
+                    </div>
+                  </th>
+                </tr>
+                <tr className="text-sm/6 font-normal">
+                  <td className="px-0 py-4">Field Ops Specialist</td>
+                  <td className="px-0 py-4 text-gray-600">Chicago</td>
+                  <td className="px-0 py-4 text-right">
+                    <Button variant="outline" href="/careers#field-ops">
+                      View listing
+                    </Button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <Testimonial />
+      </div>
+    </Container>
+  )
+}
+
+export default function Company() {
+  return (
+    <main className="overflow-hidden">
+      <GradientBackground />
+      <Container>
+        <Navbar />
+      </Container>
+      <Header />
+      {/* <Products />
+      <Team />
+      <Careers /> */}
+      <Footer />
+    </main>
+  )
+}
+
+
+/* import { AnimatedNumber } from '@/components/animated-number'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
@@ -471,3 +828,4 @@ export default function Company() {
     </main>
   )
 }
+ */
