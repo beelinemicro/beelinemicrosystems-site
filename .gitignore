@@ -1,0 +1,23 @@
+cat > .gitignore <<'EOF'
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+.pnp.cjs
+.pnp.data.json
+
+# Next.js
+.next/
+out/
+.vercel/
+.turbo/
+
+# Env and misc
+.env*
+.DS_Store
+coverage/
+dist/
+build/
+*.local
+EOF
