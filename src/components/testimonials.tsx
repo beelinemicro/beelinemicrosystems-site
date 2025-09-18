@@ -21,11 +21,11 @@ const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
     name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    title: 'Exceutive Director, SSA 4',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'Thanks to Bee Line Microsystems, we are communicating effectively with business owners across SSA 4!',
   },
-  {
+  /* {
     img: '/testimonials/conor-neville.jpg',
     name: 'Conor Neville',
     title: 'Head of Customer Success, TaxPal',
@@ -58,7 +58,7 @@ const testimonials = [
     title: 'Account Manager, Commit',
     quote:
       'I’ve smashed all my targets without having to speak to a lead in months.',
-  },
+  }, */
 ]
 
 function TestimonialCard({

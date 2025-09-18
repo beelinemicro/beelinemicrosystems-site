@@ -371,14 +371,15 @@ export default function Home() {
       <main>
         {<Container className="mt-10">
           {<LogoCloud />}
-        </Container>
-       /* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+        </Container>}
+
+        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
           <BentoSection />
         </div>
-        <DarkBentoSection /> */}
+        {/*   <DarkBentoSection /> */}
       </main>
-      {/* {<Testimonials />} */}
+      <Testimonials />
       <Footer />
     </div>
   )

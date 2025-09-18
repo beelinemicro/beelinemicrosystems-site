@@ -20,9 +20,10 @@ export function GradientBackground() {
     <div className="relative mx-auto max-w-7xl">
       <div
         className={clsx(
-          'absolute -top-44 -right-60 h-60 w-xl transform-gpu md:right-0',
+          'absolute inset - 2 bottom - 0 rounded - 4xl ring - 1 ring - black / 5 ring - inset bg - gradient - to - r from - white - 300 via - yellow - 300 to - green - 700'
+          /* 'absolute -top-44 -right-60 h-60 w-xl transform-gpu md:right-0',
           'bg-linear-115 from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff]',
-          'rotate-[-10deg] rounded-full blur-3xl',
+          'rotate-[-10deg] rounded-full blur-3xl', */
         )}
       />
     </div>

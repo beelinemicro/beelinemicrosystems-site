@@ -1,4 +1,5 @@
 import { SanityLive } from '@/sanity/live'
+import { VisualEditing } from 'next-sanity/visual-editing'  // ⬅️ subpath
 import { revalidateSyncTags } from '@/sanity/revalidateSyncTags'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
@@ -6,11 +7,9 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template: '%s - Radiant',
-    default: 'Bee Line Microsystems - Custom AI + SaaS solutions for local businesses',
+    default: 'Radiant - Close every deal',
   },
 }
-
-
 
 export default function RootLayout({
   children,
