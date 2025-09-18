@@ -84,7 +84,7 @@ function Hero() {
             operations, clearer communication, measurable growth.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/consult">Book a 20-min consult</Button>
+            <Button href="/consult">Join Our Launch List</Button>
             {/*   {<Button variant="secondary" href="/demos">
               View demos
             </Button>} */}
